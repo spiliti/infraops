@@ -11,12 +11,12 @@ services.each {
 
     image = image.replace("-db", "")
     def tag = "${env.TAG}"
-    // if (!tag?.trim()) {
-    //     def image_with_tag = image.split(":")
-    //     image = image_with_tag[0]
-    //     service = image
-    //     tag = image_with_tag[1]
-    // }
+    if (!tag) {
+        def image_with_tag = image.split(":")
+        image = image_with_tag[0]
+        service = image
+        tag = image_with_tag[1]
+    }
 
     def env = "${env.JOB_BASE_NAME}".split("-").last()
 
@@ -31,3 +31,6 @@ services.each {
         throw e
     }
 }
+
+python scripts/apply.py -e qa -m react-pgr-web -i egovio/react-pgr-web:null -dmi egovio/react-pgr-web-db:null -conf -secret
+python scripts/apply.py -e qa -m egov-user -i egovio/egov-user:686-7d56a9c -dmi egovio/egov-user-db:686-7d56a9c -conf -secret
