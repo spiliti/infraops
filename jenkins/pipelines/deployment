@@ -14,6 +14,7 @@ services.each {
     if (!tag?.trim()) {
         def image_with_tag = image.split(":")
         image = image_with_tag[0]
+	service = image
         tag = image_with_tag[1]
     }
 
