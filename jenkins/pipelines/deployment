@@ -1,7 +1,3 @@
-// import java.util.logging.Logger
-
-// Logger logger = Logger.getLogger('org.example.jobdsl')
-// logger.info('Hello from a Job DSL script!')
 node("slave"){
     checkout scm
     def deployer = load("jenkins/deployer.groovy")
@@ -35,8 +31,3 @@ node("slave"){
         }
     }
 }
-
-
-// python scripts/apply.py -e qa -m react-pgr-web:2668-11bb5d3 -i egovio/react-pgr-web:2668-11bb5d3:null -dmi egovio/react-pgr-web:2668-11bb5d3-db:null -conf -secret
-// python scripts/apply.py -e qa -m react-pgr-web -i egovio/react-pgr-web:null -dmi egovio/react-pgr-web-db:null -conf -secret
-// python scripts/apply.py -e qa -m egov-user -i egovio/egov-user:686-7d56a9c -dmi egovio/egov-user-db:686-7d56a9c -conf -secret
