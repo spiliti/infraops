@@ -11,15 +11,16 @@ services.each {
 
     image = image.replace("-db", "")
     def tag = "${env.TAG}"
-    if (!tag?.trim()) {
-        def image_with_tag = image.split(":")
-        image = image_with_tag[0]
-	service = image
-        tag = image_with_tag[1]
-    }
+    // if (!tag?.trim()) {
+    //     def image_with_tag = image.split(":")
+    //     image = image_with_tag[0]
+    //     service = image
+    //     tag = image_with_tag[1]
+    // }
 
     def env = "${env.JOB_BASE_NAME}".split("-").last()
 
+    println("Env = ${env}, service = ${service}, image = ${image}, tag = ${tag}")
     try {
         node("slave"){
             checkout scm
@@ -30,4 +31,3 @@ services.each {
         throw e
     }
 }
-
