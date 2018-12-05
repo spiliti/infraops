@@ -13,7 +13,7 @@ node("slave"){
             image = service_image[1]
         }
 
-        image = image.replace("-db", "")
+        image = image.replace("-db:", ":")
         
         def image_with_tag = image.split(":")
         image = image_with_tag[0]
