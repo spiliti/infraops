@@ -1,5 +1,7 @@
 def services = "${env.SERVICE}".split(",")
 
+println(services)
+
 services.each {
     def service_image = "$it".trim().split("/")
     def service = service_image[0]
