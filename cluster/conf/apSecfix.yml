@@ -8,11 +8,11 @@ asset-services:
   env_specific_db_migration_image: egovdevops/egov-client-impl:ap-specific-migration
   tenant_host_mapping:
       domain_suffix:
-        - .egovernments.org
+        - -sectest.egovernments.org
       url_schema:
         - https://
       city:
-        - name: kurnool-sectest
+        - name: kurnool
 
 asset-indexer:
   replicas: 1
