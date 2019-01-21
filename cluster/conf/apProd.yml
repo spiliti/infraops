@@ -10,7 +10,7 @@ asset-services:
       domain_suffix:
         - .emunicipal.ap.gov.in
       url_schema:
-        - http://
+        - https://
       city:
         - name: addanki
         - name: adoni
@@ -123,9 +123,9 @@ asset-services:
         - name: yemmiganur
         - name: yerraguntla
         - name: bheemili
-          domain: http://gvmcbpm.emunicipal.ap.gov.in
+          domain: https://gvmcbpm.emunicipal.ap.gov.in
         - name: anakapalli
-          domain: http://gvmcakp.emunicipal.ap.gov.in
+          domain: https://gvmcakp.emunicipal.ap.gov.in
 
 asset-indexer:
   replicas: 1
@@ -341,7 +341,7 @@ lams-services:
       domain_suffix:
         - .emunicipal.ap.gov.in
       url_schema:
-        - http://
+        - https://
       city:
         - name: addanki
         - name: adoni
@@ -454,9 +454,9 @@ lams-services:
         - name: yemmiganur
         - name: yerraguntla
         - name: bheemili
-          domain: http://gvmcbpm.emunicipal.ap.gov.in
+          domain: https://gvmcbpm.emunicipal.ap.gov.in
         - name: anakapalli
-          domain: http://gvmcakp.emunicipal.ap.gov.in
+          domain: https://gvmcakp.emunicipal.ap.gov.in
 
 lams-workflow:
   replicas: 2
