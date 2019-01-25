@@ -92,8 +92,10 @@ spec:
             configMapKeyRef:
               name: egov-config
               key: spring-datasource-tomcat-initialSize
+{% if conf['egov-config']['server-tomcat-max-threads'] %}
         - name: SERVER_TOMCAT_MAX_THREADS
-          value: "{{conf['egov-config']['server-tomcat-max-threads']}}"                
+          value: "{{conf['egov-config']['server-tomcat-max-threads']}}"      
+{% endif %}          
         - name: SERVER_PORT
           value: "8080"
         - name: FILE_STORAGE_MOUNT_PATH
