@@ -1,6 +1,6 @@
 # Setup Kubernetes cluster
 
-* [How to setup kubernetes cluster](https://github.com/egovernments/eGov-infraops/blob/master/docs/setup_kubernetes_cluster.md)
+* [How to setup kubernetes cluster](https://github.com/digit-egov/infraops/blob/master/docs/setup_kubernetes_cluster.md)
 
 
 # Create Jenkins jobs
