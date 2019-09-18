@@ -4,15 +4,15 @@
 
 
 # Create Jenkins jobs
-* [Jenkins build jobs](https://github.com/egovernments/eGov-infraOps/blob/master/docs/jenkins_build_jobs.md)
-* [Jenkins deploy job](https://github.com/egovernments/eGov-infraOps/blob/master/docs/jenkins_deploy_job.md)
+* [Jenkins build jobs](https://github.com/digit-egov/infraops/blob/master/docs/jenkins_build_jobs.md)
+* [Jenkins deploy job](https://github.com/digit-egov/infraops/blob/master/docs/jenkins_deploy_job.md)
 
 # Backbone setup
-* [Initial Setup](https://github.com/egovernments/eGov-infraOps/blob/master/docs/initial_setup.md)
+* [Initial Setup](https://github.com/digit-egov/infraops/blob/master/docs/initial_setup.md)
 
 # eGov Manifests explained
 
-* [eGov manifests](https://github.com/egovernments/eGov-infraOps/blob/master/docs/egov_manifests.md)
+* [eGov manifests](https://github.com/digit-egov/infraops/blob/master/docs/egov_manifests.md)
 
 
 # Creating manifest for new egov service
